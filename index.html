@@ -24,35 +24,37 @@
 <body>
 
   <!--- header --->
-  <div class="container-lg">
-    <div class="row ">
-      <header class="header col">
-        <div class="row d-flex justify-content-between align-items-center px-4 py-3">
-          <div class="logo col-4">
-            <img src="/images/logo.svg" width="80">
-          </div>
+  <nav class="navbar navbar-expand-lg position-fixed w-100 top-0 start-0">
+    <div class="container-lg px-3 py-4 d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <img src="/images/logo.svg" width="90">
+      </div>
 
-          <nav class="navbar col-8 justify-content-end">
-            <div class="row">
-              <ul class="navbar__list col d-flex">
-                <li class="navbar__item ">
-                  <a class="navbar__link text-clr-light  position-relative">Features</a>
-                </li>
-                <li class="navbar__item">
-                  <a class="navbar__link text-clr-light  position-relative">Team</a>
-                </li>
-                <li class="navbar__item">
-                  <a class="navbar__link text-clr-light position-relative">Sign In</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </header>
+      <ul class="navbar__list d-flex align-items-center">
+        <li class="navbar__item">
+          <a class="navbar__link position-relative text-clr-light section__text">
+            Features
+          </a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link position-relative text-clr-light section__text">
+            About
+          </a>
+        </li>
+
+        <li class="navbar__item">
+          <a class="navbar__link position-relative text-clr-light section__text">
+            SignIn
+          </a>
+        </li>
+      </ul>
+
     </div>
-  </div>
+  </nav>
 
-  <main class="container-fluid">
+
+  <main class="container-fluid main">
 
     <!--- hero illustration --->
     <div class="row px-3 illustration__container section-padding">
@@ -92,6 +94,7 @@
         </div>
     </section>
 
+    <!--- feature section -->
     <section class="feature section row px-3 section-padding">
       <div class="row">
         <div class="col">
@@ -161,7 +164,133 @@
       </div>
     </section>
 
+    <!--- about section --->
+    <section class="about section row px-3 section-padding">
+      <div class="row">
+        <div class="col">
+          <div class="row container-lg margin-inline-auto">
+            <figure class="col-sm-5 about__figure margin-inline-auto">
+              <img src="/images/illustration-stay-productive.png">
+            </figure>
+
+            <div class="col-sm-5 about__content d-flex flex-column justify-content-center">
+              <h2 class="section__title text-clr-light">
+                Stay productive, wherever you are
+              </h2>
+
+              <p class="section__text text-clr-white">
+                Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+                storage needs.
+              </p>
+
+              <p class="section__text text-clr-white">
+                Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+                storage needs.
+              </p>
+
+              <div class="about__btn__wrappper d-flex position-relative">
+                <button class="about__btn text-clr-cyan">
+                  See how Fylo works
+                </button>
+                <div class="about__btn__icon">
+                  <img src="/images/icon-arrow.svg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- testimonial section --->
+    <section class="testimonials row section  section-padding px-3">
+      <div class="row">
+        <div class="col">
+          <div class="row container-lg margin-inline-auto">
+            <div class="col">
+              <ul class="row testimonials__list d-grid justify-content-center">
+                <li class="testimonial-card position-relative">
+                  <img src="/images/bg-quotes.png" class="quote-mark position-absolute" width="50">
+                  <p class="section__text text-clr-light">
+                    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team
+                    has
+                    become a well-oiled collaboration machine.
+                  </p>
+
+                  <div class="user-profile d-flex align-items-start">
+                    <div class="user__avatar">
+                      <img src="/images/profile-1.jpg">
+                    </div>
+
+                    <div class="user__info">
+                      <span class="user__name text-clr-white">
+                        Satish Patel
+                      </span>
+
+                      <span class="user__designation text-clr-light">
+                        Founder & CEO, Huddle
+                      </span>
+                    </div>
+
+                </li>
+                <li class="testimonial-card position-relative">
+                  <p class="section__text text-clr-light">
+                    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team
+                    has
+                    become a well-oiled collaboration machine.
+                  </p>
+
+                  <div class="user-profile d-flex align-items-start">
+                    <div class="user__avatar">
+                      <img src="/images/profile-2.jpg">
+                    </div>
+
+                    <div class="user__info">
+                      <span class="user__name text-clr-white">
+                        Iva Boyd
+                      </span>
+
+                      <span class="user__designation text-clr-light">
+                        Founder & CEO, Huddle
+                      </span>
+                    </div>
+
+                </li>
+                <li class="testimonial-card position-relative">
+                  <p class="section__text text-clr-light">
+                    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team
+                    has
+                    become a well-oiled collaboration machine.
+                  </p>
+
+                  <div class="user-profile d-flex align-items-start">
+                    <div class="user__avatar">
+                      <img src="/images/profile-3.jpg">
+                    </div>
+
+                    <div class="user__info">
+                      <span class="user__name text-clr-white">
+                        Bruce McKenzie
+                      </span>
+
+                      <span class="user__designation text-clr-light">
+                        Founder & CEO, Huddle
+                      </span>
+                    </div>
+
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
   </main>
+
 
   <!--- bootstrap script link --->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
