@@ -441,6 +441,7 @@ footer__list__item,
 
   .footer__wrapper {
     gap: 80px;
+    flex-direction: row !important;
     justify-content: center;
   }
 }
